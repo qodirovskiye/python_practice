@@ -23,3 +23,4 @@ price_int = int(price)      #price_int = 19
 
 print("Original price:", price)
 print("Converted to int:", price_int)
+
