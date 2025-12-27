@@ -12,3 +12,4 @@ print(is_student)
 # Reassigning variables
 x = x + 5
 print("Updated x:", x)
+
