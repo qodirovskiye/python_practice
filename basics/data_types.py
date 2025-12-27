@@ -8,3 +8,4 @@ print(type(age))
 print(type(height))                                # we use the type() function to check the data type of a variable
 print(type(name))                                  
 print(type(is_active))
+
