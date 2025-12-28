@@ -1,62 +1,29 @@
-# Functions in Python
-# A function is a reusable block of code that performs a specific task.
+# A function is a reusable block of code
+# defined using the keyword `def`
 
-# -------------------------------
-# Basic function definition
-def greet():
-    print("Hello! Welcome to Python.")
-
-greet()
+# syntax:
+# def function_name(parameters):
+#     code
+#     return value
 
 
-# -------------------------------
-# Function with parameters
-def greet_user(name):
-    print("Hello,", name)
+# parameter = variable inside function definition
+# argument = value passed when calling the function
 
-greet_user("Alice")
-greet_user("Bob")
-
-
-# -------------------------------
-# Function with return value
-def add(a, b):
+def add(a, b):          # a and b are parameters
     return a + b
 
-result = add(5, 3)
-print("Sum:", result)
+result = add(3, 5)      # 3 and 5 are arguments
 
 
-# -------------------------------
-# Function with default parameter
-def greet_with_default(name="Guest"):
-    print("Hello,", name)
+# return vs print
+def show_sum(a, b):
+    print(a + b)        # prints but returns nothing
 
-greet_with_default()
-greet_with_default("John")
-
-
-# -------------------------------
-# Function that calculates area
-def rectangle_area(length, width):
-    return length * width
-
-area = rectangle_area(4, 6)
-print("Area:", area)
+def get_sum(a, b):
+    return a + b        # returns a value
 
 
-# -------------------------------
-# Difference between print and return
-def multiply(a, b):
-    print("Multiplying numbers...")
-    return a * b
-
-value = multiply(3, 4)
-print("Result:", value)
-
-# Example of a common mistake (missing return)
-def multiply_wrong(a, b):
-    print(a * b)   # prints the result but does NOT return it
-
-value = multiply_wrong(3, 4)
-print(value)  # None, because the function did not return anything
+# default parameters
+def greet(name="Guest"):
+    return "Hello " + name
