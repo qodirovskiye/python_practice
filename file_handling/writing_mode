@@ -1,0 +1,34 @@
+# Writing to files in Python
+
+# 'w' mode: creates a new file or overwrites existing one
+file = open("output.txt", "w")
+
+file.write("Hello World!\n")
+file.write("Python is awesome!")
+
+file.close()
+
+
+# 'a' mode: append (adds content without deleting old data)
+file = open("output.txt", "a")
+
+file.write("\nThis line was added later.")
+
+file.close()
+
+#------------------Bonus part------------------------
+
+# Example: writing a list of students (tuples) to a file
+
+students = [
+    ("Alice", 85),
+    ("Bob", 72),
+    ("Charlie", 90)
+]
+
+file = open("students.txt", "w")
+
+for name, score in students:
+    file.write(name + " " + str(score) + "\n")  # writes each student on a new line
+
+file.close()
