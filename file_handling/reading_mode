@@ -1,0 +1,28 @@
+# Reading files in Python
+
+# Open a file in read mode
+file = open("example.txt", "r")
+
+# Read the entire content
+content = file.read()
+print(content)  # prints all text inside the file
+
+file.close()
+
+
+# Reading line by line
+file = open("example.txt", "r")
+
+line = file.readline()
+print(line)  # prints the first line
+
+file.close()
+
+
+# Reading all lines as a list
+file = open("example.txt", "r")
+
+lines = file.readlines()
+print(lines)  # list of lines
+
+file.close()
